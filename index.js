@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 //database connection monogoDB
-mongoose.connect("mongodb+srv://afrahbawhab:Ah217Bb%40Mongoos%23@cluster0.ux82lkg.mongodb.net/e-commerce2");
+mongoose.connect("mongodb+srv://afrahbawhab:password@cluster0.ux82lkg.mongodb.net/e-commerce2");
 
 //API creaction
 
@@ -262,12 +262,3 @@ app.listen(port, (error) => {
         console.log("error: " + error)
     }
 })
-// http://localhost:4000/addproduct
-// {
-//     "name":"product 1",
-//     "id":22,
-//     "old_price":10,
-//     "new_price":8,
-//     "category":"kid",
-//     "image":"http://localhost:4000/images/product_1721329256612.svg"
-//   }
